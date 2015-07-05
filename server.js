@@ -22,6 +22,11 @@ const htmlComponent = React.createFactory(HtmlComponent);
 const debug = debugLib('quran-com');
 const server = express();
 
+if (process.env.MORGAN) {
+  var morgan = require('morgan');
+  server.use(morgan('combined'));
+}
+
 server.set('state namespace', 'App');
 server.set('view cache', true);
 // Use varnish for the static routes, which will cache too
