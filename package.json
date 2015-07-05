@@ -35,6 +35,7 @@
     "express": "^4.3.2",
     "express-state": "^1.2.0",
     "express-useragent": "^0.1.8",
+    "express-winston": "^0.3.1",
     "extract-text-webpack-plugin": "^0.8.0",
     "fluxible": "^0.4.10",
     "fluxible-plugin-fetchr": "^0.2.1",
@@ -45,7 +46,6 @@
     "jquery": "^2.1.4",
     "json-loader": "~0.5.1",
     "jsx-loader": "^0.13.2",
-    "morgan": "^1.6.1",
     "node-sass": "^3.1.2",
     "piping": "^0.1.8",
     "proxy-middleware": "^0.11.1",
@@ -64,7 +64,8 @@
     "superagent-promise": "^0.2.0",
     "url": "^0.10.3",
     "url-loader": "~0.5.5",
-    "webpack": "^1.4.12"
+    "webpack": "^1.4.12",
+    "winston": "^1.0.1"
   },
   "devDependencies": {
     "babel-core": "5.4.7",
