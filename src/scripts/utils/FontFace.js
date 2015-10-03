@@ -52,7 +52,7 @@ export function createFontFacesArray(ayahs) {
 
   fontFacesArray.push(
     `@font-face {font-family: 'bismillah';
-    url('/fonts/ttf/bismillah.ttf') format('truetype'),
+    src: url('//quran-1f14.kxcdn.com/fonts/ttf/bismillah.ttf') format('truetype')}
     .bismillah{font-family: 'bismillah';}
     .word-font.bismillah{font-family: 'bismillah'; font-size: 36px !important;}`
   )
