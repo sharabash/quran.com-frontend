@@ -18,6 +18,16 @@ class Search extends React.Component {
     });
   }
 
+  renderAyahsList() {
+    if (this.props.stats.total === 0) {
+      return (
+        <h3 className="text-center" style={{padding: '100px 0px'}}>No results found</h3>
+      );
+    }
+
+    return <AyahsList isSearch={true} />;
+  }
+
   render() {
     let pageNum = Math.ceil(this.props.stats.total / this.props.stats.size),
       currentPage = (parseInt(this.props.currentRoute.get('query').get('p')) - 1) || 0;
@@ -55,7 +65,7 @@ class Search extends React.Component {
           <div className="row">
             <div className="col-md-12">
               <div className="row">
-                <AyahsList isSearch={true} />
+                {this.renderAyahsList()}
               </div>
             </div>
           </div>
