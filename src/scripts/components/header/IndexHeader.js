@@ -3,8 +3,11 @@ import SearchInput from 'components/header/SearchInput';
 import IndexHeaderNav from 'components/header/IndexHeaderNav';
 import {NavLink} from 'fluxible-router';
 
+const style = require('styles/partials/indexheader.scss');
+console.log(style);
 class IndexHeader extends React.Component {
   renderSearch() {
+
     if (this.props.noSearch) {
       return null;
     }
@@ -32,8 +35,9 @@ class IndexHeader extends React.Component {
   }
 
   render() {
+    console.log(style);
     return (
-      <div className="index-header">
+      <div style={{background: "url('//quran-1f14.kxcdn.com/images/index-bg.jpg')", backgroundSize: 'cover'}}>
         <IndexHeaderNav navlink={this.props.navlink} />
         <div className="container">
           <div className="row">

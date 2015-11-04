@@ -1,5 +1,7 @@
-.index-header{
-  background: url('//quran-1f14.kxcdn.com/images/index-bg.jpg') center center no-repeat;
+@import '../bootstrap-config';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+:local(.indexHeader){
+  background: url('//quran-1f14.kxcdn.com/images/index-bg.jpg') ;
   background-size: cover;
 
   .nav{
