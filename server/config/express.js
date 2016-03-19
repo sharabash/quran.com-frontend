@@ -10,6 +10,8 @@ import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import httpProxy from 'http-proxy';
 
+const pretty = new PrettyError();
+
 const proxyApi = httpProxy.createProxyServer({
   target: process.env.API_URL,
   secure: true
